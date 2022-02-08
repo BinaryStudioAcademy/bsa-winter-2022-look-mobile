@@ -1,15 +1,17 @@
 import React from 'react'
-import { SafeAreaView, Text } from 'react-native'
+import { SafeAreaView } from 'react-native'
 import { Provider as ReduxProvider } from 'react-redux'
+import { NavigationContainer } from '@react-navigation/native'
+import RootNavigator from 'src/navigators/RootNavigator'
 import store from 'src/redux/store'
 
-import styles from 'src/containers/App/styles'
-
-const App = () => {
+const App: React.FC = () => {
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView>
       <ReduxProvider store={store}>
-        <Text style={styles.greetings}>Hello There!</Text>
+        <NavigationContainer>
+          <RootNavigator />
+        </NavigationContainer>
       </ReduxProvider>
     </SafeAreaView>
   )
