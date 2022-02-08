@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import styles from '../App/styles'
+import styles from './styles'
 
 const Landing: React.FC = () => {
   return (

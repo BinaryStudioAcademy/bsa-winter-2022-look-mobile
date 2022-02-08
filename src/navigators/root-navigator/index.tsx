@@ -1,5 +1,5 @@
 import React from 'react'
-import LandingPage from 'src/pages/LandingPage'
+import LandingPage from 'src/pages/landing-page'
 
 const RootNavigator: React.FC = () => {
   /* TODO:
