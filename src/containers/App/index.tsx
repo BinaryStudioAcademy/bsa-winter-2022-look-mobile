@@ -1,7 +1,7 @@
 import React from 'react'
 import { SafeAreaView, Text } from 'react-native'
 
-import styles from 'src/styles/main.styles'
+import styles from 'src/containers/App/styles'
 
 const App = () => {
   return (
